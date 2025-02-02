@@ -1,10 +1,11 @@
-# File Upload System
+# C2C System
 
 This project allows users to upload files from a client to a server using HTTP requests. It demonstrates a basic file upload mechanism using PowerShell and a web server.
 
 ## Overview
 
-The system consists of a **Client** that sends files and a **Server** that receives and processes these files. Below are the details of the client-side script and server-side setup.
+1. Simple HTTP 
+   The system consists of a **Client** that sends files and a **Server** that receives and processes these files. Below are the details of the client-side script and server-side setup.
 
 ## Server Setup
 
