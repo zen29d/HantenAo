@@ -11,7 +11,7 @@ The system consists of a **Client** that sends files and a **Server** that recei
 The server listens for incoming file uploads. It processes the file and stores it in a designated folder. You can configure the server to handle various file types, validate inputs, and even respond with confirmation messages after successful uploads.
 
 ### Server Image
-![Server](path/to/your/server-image.png)
+![Server](media/server.png)
 
 **Server URL**: `http://10.113.107.107:7070/upload`
 
@@ -20,7 +20,7 @@ The server listens for incoming file uploads. It processes the file and stores i
 The client is a PowerShell script that allows users to select a file to upload to the server. It sends the file via a multipart form-data POST request. If the upload is successful, it will output a confirmation message.
 
 ### Client Image
-![Client](path/to/your/client-image.png)
+![Client](media/client.png)
 
 ### Example Usage
 
