@@ -5,7 +5,7 @@ This project allows users to upload files from a client to a server using HTTP r
 ## Overview
 
 1. Simple HTTP 
-   The system consists of a **Client** that sends files and a **Server** that receives and processes these files. Below are the details of the client-side script and server-side setup.
+```The system consists of a **Client** that sends files and a **Server** that receives and processes these files. Below are the details of the client-side script and server-side setup.```
 
 ## Server Setup
 
