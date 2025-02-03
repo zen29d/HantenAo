@@ -26,4 +26,4 @@ The client is a PowerShell script that allows users to select a file to upload t
 ### Example Usage
 
 ```powershell
-autoexfil.ps1
+autoexfil.ps1 <rhost>
