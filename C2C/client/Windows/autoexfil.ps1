@@ -1,4 +1,4 @@
- function Scan-Files {
+  function Scan-Files {
     param (
         [string]$Path,
         [string[]]$Extensions
@@ -115,6 +115,15 @@ function Upload-File {
 }
 
 
+# Default Remote Server
+$RHOST = "10.113.107.107"
+$RPORT = "7070"
+if ($args.Count -gt 0) {
+    $rhost = $args[0]
+} else {
+    $rhost = $RHOST
+}
+
 # File Scanning
 Write-Host "File Scanning....." -ForegroundColor Blue
 # Add extention as per requirement
@@ -130,5 +139,6 @@ $zipFilePath = Create-Archive -destinationPath $destinationPath -fileName $zipFi
 
 # File Uploading
 Write-Host "File Uploading....." -ForegroundColor Blue
-$uploadServer = "http://10.113.107.107:7070/upload"
+$uploadServer = "http://${rhost}:$RPORT/upload"
+Write-Host "Info: Using Remote Server: $uploadServer" -ForegroundColor Green
 Upload-File -FilePath $zipFilePath -URL $uploadServer 
